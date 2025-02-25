@@ -1,0 +1,23 @@
+.main {
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.work-in-progress {
+  width: min(80%, 850px);
+  color: rgb(48, 52, 55);
+  text-align: center;
+}
+.work-in-progress h2 {
+  font-size: clamp(2rem, 7vw, 10rem);
+  text-transform: uppercase;
+  line-height: 110%;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.work-in-progress img {
+  margin: auto;
+}
+.icon {
+  scale: 1.5;
+}

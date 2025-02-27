@@ -2,3 +2,42 @@
   width: min(100% - 32px, 1024px);
   margin-inline: auto;
 }
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  z-index: 10000000;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+.overlay[data-active="true"] {
+  pointer-events: visible;
+  opacity: 1;
+  animation: overlay-true 0.5s forwards;
+}
+@keyframes overlay-true {
+  from {
+    pointer-events: none;
+    opacity: 0;
+  }
+  to {
+    pointer-events: visible;
+    opacity: 1;
+  }
+}
+.overlay[data-active="false"] {
+  pointer-events: none;
+  opacity: 0;
+  animation: overlay-false 0.15s forwards;
+}
+@keyframes overlay-false {
+  from {
+    pointer-events: visible;
+    opacity: 1;
+  }
+  to {
+    pointer-events: none;
+    opacity: 0;
+  }
+}

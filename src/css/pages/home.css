@@ -141,6 +141,12 @@
 }
 .process__under-conctruction {
 }
+.process__under-conctruction {
+  outline: 1px solid rgba(255, 255, 255, 0.286);
+  background-color: #ffffff16;
+  border-radius: 16px;
+  padding: 5vw;
+}
 .process__under-conctruction p {
   text-align: center;
   font-size: clamp(1.5rem, 7vw, 3rem);
@@ -151,4 +157,12 @@
   border-radius: 100%;
   mix-blend-mode: multiply;
   margin: auto;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  display: grid;
+  place-items: center;
 }

@@ -11,3 +11,18 @@ hamBtn.addEventListener("click", (e) => {
     hamBtn.setAttribute("data-active", "false");
   }
 });
+
+const articleBtn = document.querySelectorAll(".article-btn");
+articleBtn.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    if (overlay.getAttribute("data-active") === "false") {
+      overlay.setAttribute("data-active", "true");
+    } else {
+      overlay.setAttribute("data-active", "false");
+    }
+  });
+  const overlay = document.querySelector(".overlay");
+  overlay.addEventListener("click", (e) => {
+    overlay.setAttribute("data-active", "false");
+  });
+});

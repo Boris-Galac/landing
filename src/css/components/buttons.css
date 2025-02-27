@@ -1,4 +1,25 @@
 button {
   background-color: transparent;
   border: 0;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.article-btn {
+  background: hsla(0, 0%, 100%, 0.082) !important;
+  font-weight: 600 !important;
+}
+.article-btn:hover {
+  background: hsla(0, 0%, 100%, 0.307) !important;
+  font-weight: 600 !important;
+}
+.hero-cta-btn {
+  transition: 0.25s;
+  gap: 6px !important;
+}
+.hero-cta-btn:hover {
+  background: hsl(230, 69%, 49%);
+}
+.cta-temple-ray {
+  letter-spacing: 2px;
+  text-transform: capitalize;
 }

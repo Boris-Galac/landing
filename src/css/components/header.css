@@ -1,8 +1,14 @@
 .header {
-  background-color: var(--dark);
+  /* background-color: var(--dark); */
+  background-color: hsla(0, 0%, 0%, 0.322);
+  backdrop-filter: blur(5px);
   display: flex;
   align-items: center;
   padding-inline: 1rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 50;
 }
 .header__logo {
   font-size: 2rem;
@@ -11,11 +17,12 @@
 .nav {
   position: fixed;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: hsla(0, 0%, 0%, 0.9);
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100vw;
+  z-index: 1;
 }
 .nav[aria-expanded="true"] {
   display: grid;
@@ -66,6 +73,7 @@
   margin-left: auto;
   display: grid;
   cursor: pointer;
+  z-index: 5;
 }
 .ham-line {
   position: absolute;

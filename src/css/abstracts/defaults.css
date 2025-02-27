@@ -11,6 +11,9 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+body {
+  background: linear-gradient(150deg, #051a61, #3f70b9);
+}
 img,
 picture,
 svg,
@@ -52,4 +55,7 @@ section {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(125, 187, 238);
+}
+section:not(:first-child) {
+  padding-block: 84px;
 }

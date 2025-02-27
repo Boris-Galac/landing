@@ -23,3 +23,23 @@ button {
   letter-spacing: 2px;
   text-transform: capitalize;
 }
+.scroll-down-btn {
+  position: absolute;
+  bottom: 2rem;
+  transform: translateX(-50%);
+  left: 10%;
+  animation: scroll-down 1s ease-in-out infinite alternate;
+}
+@keyframes scroll-down {
+  from {
+    bottom: 2rem;
+  }
+  to {
+    bottom: 3rem;
+  }
+}
+@media (min-width: 1300px) {
+  .scroll-down-btn {
+    left: 50%;
+  }
+}

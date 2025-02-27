@@ -6,6 +6,7 @@
 /* components */
 @import "components/header.css";
 @import "components/buttons.css";
+@import "components/loader.css";
 @import "components/footer.css";
 /* pages */
 @import "pages/home.css";

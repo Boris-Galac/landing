@@ -143,7 +143,7 @@
 }
 .process__under-conctruction {
   outline: 1px solid rgba(255, 255, 255, 0.286);
-  background-color: #ffffff16;
+  background-color: #3666ad;
   border-radius: 16px;
   padding: 5vw;
 }
@@ -153,10 +153,18 @@
   line-height: 110%;
   font-weight: 100;
 }
-.process__under-conctruction img {
-  border-radius: 100%;
-  mix-blend-mode: multiply;
+
+.contact-mail {
+  padding: 16px;
+  outline: 1px solid #ffffff53;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  color: #fff;
   margin: auto;
+  margin-top: 33px;
 }
 footer {
   background-color: black;
@@ -165,4 +173,9 @@ footer {
   text-align: center;
   display: grid;
   place-items: center;
+}
+@media (min-width: 1024px) {
+  .contact-mail {
+    margin-top: 70px;
+  }
 }
